@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <audio ref={popupAudioRef} src={popupMusic} autoPlay />
+      <audio ref={popupAudioRef} src={popupMusic} loop />
       <audio ref={backgroundAudioRef} src={backgroundMusic} loop />
       <Header />
       <main>
