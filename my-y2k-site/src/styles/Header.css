@@ -1,0 +1,81 @@
+.header {
+  background:url('../assets/stars_colored.gif') #ccf7f7; /* pastel aqua suave */
+  padding: 15px;
+  text-align: center;
+  border: 4px double #ff9999; /* coral pastel */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: headerGlow 2s infinite alternate;
+}
+
+@keyframes headerGlow {
+  from { box-shadow: 0 0 5px #ff9999; }
+  to { box-shadow: 0 0 20px #ff9999; }
+}
+
+/* A imagem do título com espaçamento inferior */
+.header-title-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.header-nav a {
+  margin: 0 15px;
+  padding: 5px 10px;
+  background: linear-gradient(to bottom, #ff66b2 0%, #ff3385 100%);
+  border: 2px solid #ff0055;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 10px rgba(255, 20, 147, 0.4);
+  transition: all 0.3s ease;
+}
+
+.header-nav a:hover {
+  background: linear-gradient(to bottom, #ff3385 0%, #ff66b2 100%);
+  transform: scale(1.05);
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.header-title-img:hover {
+  animation: scaleUp 1s alternate infinite ease-in-out;
+}
+
+/* Brilho pulsante no título */
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #f0f; }
+  50% { text-shadow: 0 0 10px #fff, 0 0 20px #f0f; }
+}
+h1, h2 {
+  animation: glow 1s infinite alternate;
+}
+
+.surprise-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff66b2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.surprise-btn:hover {
+  transform: scale(1.1);
+}

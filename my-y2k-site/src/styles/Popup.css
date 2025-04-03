@@ -1,0 +1,107 @@
+/* Estilo para o overlay do popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para destacar o popup */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Estilo do conteúdo do popup */
+.popup-content {
+  background: url('../assets/stars_white.gif'), linear-gradient(45deg, #ff66b2, #ffccff);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px rgba(255, 105, 180, 0.9);
+  text-align: center;
+  position: relative;
+  max-width: 420px;
+  border: 6px double #ff3399;
+  animation: popupFade 0.6s ease-in-out;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Estilização do vídeo em formato circular com brilho */
+.popup-video {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 6px solid #ff3399;
+  box-shadow: 0px 0px 15px #ff66b2, 0px 0px 20px #ff99cc inset;
+}
+
+/* Título do popup com sombras e efeito neon */
+.popup-title {
+  font-size: 1.8em;
+  background-image: linear-gradient(45deg, #ff0000, #ff7300, #ff00ff, #ff0000, #ffcc00, #00ff00, #00ffff, #0000ff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 3px 3px 0 #ff00ff, 5px 5px 0 #ffff00;
+  animation: gradientMove 3s infinite linear;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Botão com efeito degradê e brilho */
+.close-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #ff33cc, #ff66ff);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 0px 0px 10px white;
+  transition: all 0.3s;
+}
+
+.close-btn:hover {
+  background: linear-gradient(45deg, #ff0099, #ff33cc);
+  box-shadow: 0px 0px 20px white;
+  transform: scale(1.1);
+}
+
+/* Efeito de brilho ao passar o mouse sobre imagens */
+img:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s;
+}
+
+/* Animação vibratória para o botão */
+@keyframes vibrate {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-1px); }
+}
+
+.close-btn:hover {
+  animation: vibrate 0.2s ease-in-out;
+}
