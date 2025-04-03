@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import '../styles/Popup.css';
-import profileVideo from '../assets/teste.mp4';
+import profileVideo from '../assets/popupVideo.mp4';
 
 function Popup({ isVisible, onClose }) {
   const videoRef = useRef(null);
