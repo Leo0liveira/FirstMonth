@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Gallery.css';
 
-const images = import.meta.glob('../assets/foto_*.jpg', { eager: true });
+const images = import.meta.glob('../assets/galeriaDeFotos/foto_*.jpg', { eager: true });
 
 const descriptions = [
   "Eita como ele é sério",

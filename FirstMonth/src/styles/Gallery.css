@@ -2,7 +2,7 @@
   margin-top: 30px;
   text-align: center;
   padding: 15px;
-  background: url('../assets/Stars Sparkle Sticker.gif') rgba(255, 255, 255, 0.95);
+  background: url('../assets/gifs/StarsSparkle.gif') rgba(255, 255, 255, 0.95);
   border: 3px solid #ffb3ff; /* borda em rosa pastel */
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
@@ -46,7 +46,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../assets/stars_colored.gif') no-repeat center center;
+  background: url('../assets/gifs/stars_colored.gif') no-repeat center center;
   background-size: cover;
   opacity: 0.8;
   pointer-events: none;

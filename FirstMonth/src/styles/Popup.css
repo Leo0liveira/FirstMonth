@@ -14,7 +14,7 @@
 
 /* Estilo do conteúdo do popup */
 .popup-content {
-  background: url('../assets/stars_white.gif'), linear-gradient(45deg, #ff66b2, #ffccff);
+  background: url('../assets/gifs/stars_white.gif'), linear-gradient(45deg, #ff66b2, #ffccff);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
