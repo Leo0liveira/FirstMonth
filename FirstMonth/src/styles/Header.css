@@ -79,3 +79,43 @@ h1, h2 {
 .surprise-btn:hover {
   transform: scale(1.1);
 }
+
+.popup-button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  border: 3px solid #ff0055;
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(45deg,  #ff0000, #ff7300, #ff00ff, #ff0000, #ffcc00, #00ff00, #00ffff, #0000ff);
+  background-size: 300% 300%;
+  box-shadow: 0px 0px 15px rgba(255, 20, 147, 0.6);
+  animation: pulseGlow 1.5s infinite alternate, colorShift 5s infinite;
+}
+
+.popup-button:hover {
+  transform: scale(1.2) rotate(2deg);
+  box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.8);
+}
+
+@keyframes pulseGlow {
+  from {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px rgba(255, 20, 147, 0.4);
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0px 0px 25px rgba(255, 255, 0, 0.8);
+  }
+}
+
+@keyframes colorShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
